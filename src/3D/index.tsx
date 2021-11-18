@@ -1,14 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Canvas } from '@react-three/fiber'
-import { OrbitControls, PerspectiveCamera, Line, CubicBezierLine, Sphere } from '@react-three/drei';
+import { OrbitControls, PerspectiveCamera, Line, Sphere } from '@react-three/drei';
 import * as THREE from 'three';
 
 function randomColorHex() {
     return '#' + Math.floor(Math.random() * 16777215).toString(16);
-}
-
-function randomHWD(): [number, number, number] {
-    return [Math.random() * 3, Math.random() * 4, Math.random() * 3];
 }
 
 function randomRaius(): [number] {
